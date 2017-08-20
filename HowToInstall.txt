@@ -1,0 +1,21 @@
+# Windows 版本使用方式
+# 1.安裝Python
+Python 3.6 version 安裝網址：https://repo.continuum.io/archive/Anaconda3-4.4.0-Windows-x86_64.exe
+
+# 2.打開命令列介面(CLI)
+快捷鍵：[視窗鍵] + [R]，輸入"cmd"開啟命令列工具
+
+# 3.建立Python 3.5版虛擬執行環境
+於CLI輸入 conda create -n opencv3 python=3.5
+確認安裝
+
+# 4.啟動虛擬執行環境
+於CLI輸入 activate opencv3
+**此時命令列原本的"C:\xxx"字樣會變成"(opencv3) C:\xxx"字樣
+
+# 5.安裝OpenCV3第三方套件
+於CLI輸入 conda install -c https://conda.anaconda.org/menpo opencv3
+
+# 6.啟動辨識程序
+(1) 安裝USB webcam
+(2) 輸入 python run_camera.py
